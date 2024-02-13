@@ -1,0 +1,35 @@
+FROM golang:1.21-alpine as builder
+
+WORKDIR /app
+
+COPY . .
+ENV CGO_ENABLED=0
+
+### Build
+FROM builder as builder-build
+ARG GIT_COMMIT=dev
+ARG VERSION=dev
+ARG ADDITION_ENV
+RUN echo "✅ Build app for Linux | with Addition=${ADDITION_ENV}"
+# RUN GOOS=linux \
+RUN go build -o app main.go
+
+RUN echo "✅ Build completed successfully"
+RUN echo "ℹ️ Build information:  | Version=${VERSION} | Git Commit=${GIT_COMMIT}"
+# Expose port 8080 to the outside world
+EXPOSE 8080
+
+#### Runtime
+FROM gcr.io/distroless/base:nonroot AS distroless_standard
+
+FROM distroless_standard
+ARG APP
+ENV APP_HTTP_DEBUG=false
+EXPOSE 8080
+
+WORKDIR /app
+COPY --from=builder-build /app/app /app/config.yml /app/
+
+ENTRYPOINT ["/app/app"]
+
+CMD ["start"]
