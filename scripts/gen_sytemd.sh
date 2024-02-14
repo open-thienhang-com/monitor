@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Description: Testing only
+# Author: thienhang.com
+# Date: Feb 1, 2024
+
 # Check if a directory path is provided as an argument
 if [ -z "$1" ]; then
     echo "Error: Directory path not provided."

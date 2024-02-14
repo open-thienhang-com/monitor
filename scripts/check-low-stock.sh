@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Description: Testing only
+# Author: thienhang.com
+# Date: Feb 1, 2024
+
 # PostgreSQL settings
 DB_HOST="10.1.1.37"
 DB_PORT="5432"

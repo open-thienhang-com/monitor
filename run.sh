@@ -3,13 +3,15 @@
 # Specify the directory containing scripts
 SCRIPTS_DIR="./scripts"
 
-# Function to display the menu
+# Function to display the menu with descriptions
 display_menu() {
+    clear
     echo "=== Menu ==="
     local index=0
     for script in "${scripts[@]}"; do
         ((index++))
-        echo "$index. $script"
+        local description=$(grep -m 1 "^# Description:" "$script" | sed 's/^# Description://')
+        printf "%-3s %-50s\n" "$index." "$description"
     done
     echo "0. Exit"
     echo "============"
@@ -25,8 +27,10 @@ process_choice() {
         local script=${scripts[$((choice - 1))]}
         echo "Executing script: $script"
         source "$script"
+        read -rp "Press Enter to return to the menu..."
     else
         echo "Invalid choice!"
+        read -rp "Press Enter to continue..."
     fi
 }
 
@@ -38,6 +42,6 @@ scripts=($(find "$SCRIPTS_DIR" -type f -name "*.sh"))
 
 while true; do
     display_menu
-    read -p "Enter your choice: " choice
+    read -rp "Enter your choice: " choice
     process_choice "$choice"
 done

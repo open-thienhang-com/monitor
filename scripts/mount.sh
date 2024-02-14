@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Description: Testing only
+# Author: thienhang.com
+# Date: Feb 1, 2024
+
 echo "thienhang - Print mount point"
 echo "--------------------"
 echo "✅ Mount Points:"

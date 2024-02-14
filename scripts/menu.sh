@@ -1,2 +1,5 @@
 #!/bin/bash
-echo "test2"
+
+# Description: Testing only
+# Author: thienhang.com
+# Date: Feb 1, 2024

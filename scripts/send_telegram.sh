@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Description: Testing only
+# Author: thienhang.com
+# Date: Feb 1, 2024
+
 # Check for the correct number of command-line arguments
 if [ "$#" -ne 3 ]; then
     echo "Usage: $0 <bot_token> <chat_id> <message>"

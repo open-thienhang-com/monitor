@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Description: Testing only
+# Author: thienhang.com
+# Date: Feb 1, 2024
+
 # Define colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'

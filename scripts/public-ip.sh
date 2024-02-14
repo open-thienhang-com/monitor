@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Description: Testing only
+# Author: thienhang.com
+# Date: Feb 1, 2024
+
 IP_MSG="$(curl --no-progress-meter http://ifconfig.io 2>&1)"
 STATUS=$?
 ICON="dialog-information"

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Description: Testing only
+# Author: thienhang.com
+# Date: Feb 1, 2024
+
 # Function to send a notification
 send_notification() {
     local message="$1"

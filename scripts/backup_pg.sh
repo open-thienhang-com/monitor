@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Description: Testing only
+# Author: thienhang.com
+# Date: Feb 1, 2024
+
 # PostgreSQL backup script with cron setup
 # Adjust these variables to match your PostgreSQL setup and server details
 REMOTE_USER="tian"
