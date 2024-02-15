@@ -1,0 +1,14 @@
+version: '3'
+services:
+  rancher:
+    image: rancher/rancher
+    privileged: true
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+
+  argo:
+    image: argoproj/argo
+    ports:
+      - "2746:2746"
