@@ -1,1 +1,0 @@
-python3 cmd/test.thienhang.com/setup.py sdist -d cmd/test.thienhang.com/
