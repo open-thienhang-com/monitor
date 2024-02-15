@@ -1,0 +1,17 @@
+{
+  "debug": true,
+  "index": "/",
+  "prefix": "v1",
+  "language": "en",
+  "store": {
+    "path": "./uploads",
+    "prefix": "uploads"
+  },
+  "access_log": "./logs/access.log",
+  "error_log": "./logs/error.log",
+  "info_log": "./logs/info.log",
+  "access_assets_log_off": true,
+  "theme": "shopy",
+  "bootstrap_file_path": "./bootstrap.go",
+  "color_scheme": "skin-black"
+}

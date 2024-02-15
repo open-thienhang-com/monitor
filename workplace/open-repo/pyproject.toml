@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "open-thienhang-com"
+version = "0.1.0"
+description = ""
+authors = ["thienhang.com"]
+readme = "README.md"
+packages = [
+    { include = "pmodules" },
+    { include = "services" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+hdfs = "^2.7.2"
+modules = "^1.0.0"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+modules = "^1.0.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+service_test = 'cmd:test.thienhang.com'
+service_test2 = 'open_mlops.cmd:test2.thienhang.com'
