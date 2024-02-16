@@ -1,1 +1,47 @@
-.workplace
+# Ignore local development files and directories
+*.log
+*.bak
+*.tmp
+*.out
+*.swp
+.DS_Store
+/.vscode/
+/.idea/
+/node_modules/
+/vendor/
+
+/workplace
+
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+vendor/
+.vscode/
+# End of Go specific
+
+# Docker specific
+# Ignore local docker images
+*.tar
+# End of Docker specific
+
+# Docker Compose specific
+docker-compose.override.yml
+# End of Docker Compose specific
+
+# Ignore common IDE files
+.vscode/
+.idea/
+
+# Ignore OS generated files
+.DS_Store
+
+# Ignore build files
+/bin/
+/build/
+/dist/
+
+# Ignore dependency directories
+/node_modules/
