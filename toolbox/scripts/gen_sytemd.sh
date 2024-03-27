@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Description: Testing only
+# Description: Gen SystemD
 # Author: thienhang.com
 # Date: Feb 1, 2024
 

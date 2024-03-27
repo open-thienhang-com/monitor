@@ -1,3 +1,9 @@
+#!/bin/bash
+
+# Description: Build Docker
+# Author: thienhang.com
+# Date: Feb 1, 2024
+
 sudo apt-get update
 sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent
 software-properties-common

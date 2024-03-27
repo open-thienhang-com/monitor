@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Description: Testing only
+# Description: Send Telegram message
 # Author: thienhang.com
 # Date: Feb 1, 2024
 

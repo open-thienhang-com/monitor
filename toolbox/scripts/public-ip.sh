@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Description: Testing only
+# Description: Get External IP Address
 # Author: thienhang.com
 # Date: Feb 1, 2024
 

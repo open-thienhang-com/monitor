@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Description: Testing only
+# Description: Continuously monitor the PostgreSQL log file for errors
 # Author: thienhang.com
 # Date: Feb 1, 2024
 

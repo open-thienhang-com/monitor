@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Specify the directory containing scripts
-SCRIPTS_DIR="./scripts"
+SCRIPTS_DIR="./toolbox/scripts"
 
 # Function to display the menu with descriptions
 display_menu() {

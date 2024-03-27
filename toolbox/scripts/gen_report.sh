@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Description: Testing only
+# Description: Create Postgres Report with shell
 # Author: thienhang.com
 # Date: Feb 1, 2024
 

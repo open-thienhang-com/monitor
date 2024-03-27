@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Description: Testing only
+# Description: Check lowstock
 # Author: thienhang.com
 # Date: Feb 1, 2024
 
