@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Description: Check lowstock
+# Description: 🔴 Postgres| Check lowstock
 # Author: thienhang.com
 # Date: Feb 1, 2024
 
 # PostgreSQL settings
-DB_HOST="10.1.1.37"
+DB_HOST="localhost"
 DB_PORT="5432"
-DB_NAME="thienhang_dsp_api_test_new"
+DB_NAME="thienhang"
 DB_USER="postgres"
 DB_PASSWORD="postgressecret"
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Description: Create Postgres Report with shell
+# Description: 🔴 Postgres| Create Postgres Report with shell
 # Author: thienhang.com
 # Date: Feb 1, 2024
 

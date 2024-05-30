@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Description: Cronjob Backup with PostgreSQL
+# Description: 🔴 Postgres| Cronjob Backup with PostgreSQL
 # Author: thienhang.com
 # Date: Feb 1, 2024
 
